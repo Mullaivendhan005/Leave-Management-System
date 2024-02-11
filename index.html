@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwmpGsLcpQe9M_tf3NcX0Tm2T_S12z5Purq7bk7vBAYpHsDNUW2c1vd_YpW3vmUxYmSc8&usqp=CAU');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+</style>
+<body>
+    <button id="logoutButton" onclick="logout()" style="margin-left: 90%;" class="button">Logout</button><br>
+    <p> </p>
+    <h1><b><i><u>Leave Management System</u></i></b>...</h1>
+    <div class="form-container">
+    <div class="leave-form">
+        <h2 style="color: aqua;"><b><i><u>Apply for Leave</u></i></b></h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+        
+        <label for="department">Department:</label>
+        <input type="text" id="department" required>
+
+        <label for="leave-type">Leave Type:</label>
+        <select id="leave-type">
+            <option value="casual">Casual Leave</option>
+            <option value="medical">Medical Leave</option>
+        </select>
+        
+        <label for="leave-days">Number of Days:</label>
+        <input type="number" id="leave-days" min="1" max="10" required>
+
+        <label for="leave-date">Leave from:</label>
+        <input type="date" id="leave-date" required>
+	<label for="leave-date">Leave to:</label>
+        <input type="date" id="leave-date" required>
+
+
+        <button id="apply-btn">Apply</button>
+    </div>
+
+    <div class="leave-form">
+        <h2><b><i><u>Leave Balances</u></i></b></h2>
+        <p>Casual Leave Balance: <span id="casual-balance">5</span> days</p>
+        <p>Medical Leave Balance: <span id="medical-balance">10</span> days</p>
+    </div>
+  </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+     <link rel="stylesheet" href="styles.css">
+<style>
+ body {
+        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwmpGsLcpQe9M_tf3NcX0Tm2T_S12z5Purq7bk7vBAYpHsDNUW2c1vd_YpW3vmUxYmSc8&usqp=CAU');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+   }
+body {
+  background-color: #f3f3f3;
+  font-family: Arial, sans-serif;
+}
+</style>
+</head>
+    <script>
+        function validate() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            if(username ==="mullai" && password ==="30mu") {
+                // If valid, redirect to the second page
+                window.location = "index.html";
+            } else {
+                // If invalid, show an error message
+                alert("Invalid username or password!");
+            }
+        }
+    </script>
+
+<body>
+    <br><br><br><br><br><br><br><br>
+    <center>
+    <h1 style="color:black;"><b><i>Login<i><b> </h1>
+    <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username"><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br>
+
+        <input type="button" value="Login" onclick="validate()">
+    </form>
+    <center>
+       
+
+</body>
+</html>
